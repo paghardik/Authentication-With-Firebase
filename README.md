@@ -4,8 +4,8 @@ Sample Code for authentication with firebase
 ### Sign-in methods provided by Firebase
 
 - [x] Email/Password
-- [ ] Google
-- [ ] Phone
-- [ ] Facebook
+- [x] Google
+- [x] Phone
+- [x] Facebook
 
 
