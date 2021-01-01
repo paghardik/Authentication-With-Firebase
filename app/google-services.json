@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "152921048995",
+    "project_id": "authenticationwithfierbase",
+    "storage_bucket": "authenticationwithfierbase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152921048995:android:6fa66c39549c485d6d7c16",
+        "android_client_info": {
+          "package_name": "com.example.authenticationwithfierbase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152921048995-clvr84n1e1t4lp6l2p6i7sse1gt4ribh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSIfX7DWNOQmBybn_oHge-zCEQGXekpNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152921048995-clvr84n1e1t4lp6l2p6i7sse1gt4ribh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
