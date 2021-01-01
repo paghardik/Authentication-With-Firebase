@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">AuthenticationWithFierBase</string>
+    <string name="app_name">AuthenticationWithFirebase</string>
+    <string name="firebase_status_fmt">Firebase UID: %s</string>
+
+    <string name="facebook_app_id">319644062579998</string>
 </resources>

@@ -4,6 +4,106 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GoogleSignIn">
+    tools:context=".GoogleSignIn"
+    android:background="#f1f1f1">
+
+        <ImageView
+            android:id="@+id/img_Firebase"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fierbase_logo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:text="Google Sign In"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_Firebase"
+            android:layout_width="0dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/mbSignIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SignIn"
+                        style="@style/ThemeOverlay.MyDarkButton"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/mbSignOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="SignOut"
+                        style="@style/ThemeOverlay.MyDarkButton"/>
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/mbRevokeAccess"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/ThemeOverlay.MyDarkButton"
+                        android:visibility="gone"
+                        android:text="Revoke Access"/>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/mcContainer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvDisplayName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Display Name : "/>
+
+        <TextView
+            android:id="@+id/tvFbUid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Firebase Uid : "/>
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

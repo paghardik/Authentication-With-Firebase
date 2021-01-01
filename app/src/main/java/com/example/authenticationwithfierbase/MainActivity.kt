@@ -29,6 +29,8 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
         binding.listView.adapter = adapter
         binding.listView.onItemClickListener = this
 
+        HashKey.printHashKey(applicationContext)
+
     }
 
     override fun onStart() {
@@ -38,10 +40,16 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
     companion object{
         val CLAZZ = arrayOf(
             EmailPasswordActivity::class.java,
+            GoogleSignIn::class.java,
+            PhoneAuthActivity::class.java,
+                FacebookLoginActivity::class.java
         )
 
         val DESCRIPTION_IDS = arrayOf(
             "Use Email/Password to Authentication with Firebase",
+            "Use Google to Authentication with Firebase",
+            "Use Phone Number to Authentication with Firebase",
+            "Use FacebookLogin to Authentication with Firebase",
         )
     }
 
